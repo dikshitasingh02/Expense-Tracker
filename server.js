@@ -21,7 +21,7 @@ app.use(cors());
 app.use('/api/v1/user', require('./routes/userRoutes'))
 
 //port
-const PORT = 8080 || process.env.PORT
+const PORT = 5173 || process.env.PORT
 
 //listen server
 app.listen(PORT,() => {

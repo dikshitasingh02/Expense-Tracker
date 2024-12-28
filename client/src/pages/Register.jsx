@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
-import{Form,Input, message} from 'antd'
+import {Form,Input, message} from 'antd'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'
-function Register() {
-    const nevigate = useNavigate()
+import Spinner from "../components/Spinner"
+const Register = () => {
+    const navigate = useNavigate()
     const [loading,setLoading] = useState(false)
     //form submit
     const submitHandler = async (values) => {
